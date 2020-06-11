@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-from django.shortcuts import render
-from django.http import HttpResponse
-=======
 from datetime import datetime
 import re
 import requests
 
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
->>>>>>> Начальный коммит
+
 
 from .forms import PayoutForm
 from .models import Person, Payout
