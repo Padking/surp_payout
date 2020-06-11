@@ -48,4 +48,4 @@ def fill_in_tables(num_records=1):
         p_1.payment_set.add(pay, bulk=False)
 
 
-fill_in_tables()
+# fill_in_tables()

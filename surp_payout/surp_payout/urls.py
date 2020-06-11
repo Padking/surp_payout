@@ -14,21 +14,6 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-<<<<<<< HEAD
-# from django.urls import re_path
-from django.contrib import admin
-
-from payout import views
-# from payout.models import Person  # работает
-# from . import utils
-# from utils import generate_user  # не работает
-# print(utils.generate_user())
-
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url('proba', views.index),
-    url(r'^persons/(?P<person_id>\d+)/', views.persons),  ###
-=======
 from django.contrib import admin
 
 from payout import views
@@ -39,6 +24,5 @@ urlpatterns = [
     url(r'^persons/(?P<person_id>\d+)/', views.persons),
     url(r'action', views.action_func),
     url(r'', views.index),
->>>>>>> Начальный коммит
 
 ]
