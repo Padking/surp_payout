@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
     <meta charset="utf-8" />
     <title>Заказ выплаты</title>
@@ -15,4 +16,33 @@
         <input type="submit" value="Send">
     </form>
 </body>
+=======
+    <head>
+        <meta charset="utf-8" />
+        <title>Заказ выплаты</title>
+    </head>
+    <body>
+        <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Имя пользователя</th>
+                    <th>Текущий баланс</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>{{ person.first_name }}</td>
+                <td>{{ person.balance }}</td>
+            </tr>
+        </table>
+        <br>
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                {{ form }}
+            </table>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+>>>>>>> Начальный коммит
 </html>

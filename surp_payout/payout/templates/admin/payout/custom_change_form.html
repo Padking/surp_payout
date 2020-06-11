@@ -1,0 +1,14 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+{% block submit_buttons_bottom %}
+{{ block.super }}
+
+<form>
+    <button type="button" 
+            onclick="location.href='/action' + location.pathname;" 
+            autofocus>
+            ВЫПЛАТИТЬ
+    </button>
+</form>
+
+{% endblock %}
